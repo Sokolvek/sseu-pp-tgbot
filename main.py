@@ -3,16 +3,15 @@ import random
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 
-# Replace with your bot token (from BotFather)
 BOT_TOKEN = "7822766241:AAGjhwzu8Zl9ZGXoP88ru4hFBe0EM82VKZs" #os.getenv("BOT_TOKEN")
 
-# Enable logging
+
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
     level=logging.INFO
 )
 
-# Game state:  Dictionary to store game data for each user
+ 
 game_state = {}
 
 
